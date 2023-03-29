@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: test-component-uasb
     spec:
       containers:
-      - image: quay.io/susdas/test-images:4b3b5e52813d48238650d3b975403234
+      - image: quay.io/susdas/test-images@sha256:d1bbefcbf97cdffa43d82687056f5eea4c192cee5af5fd5c28508cdb3d07ab8c
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
