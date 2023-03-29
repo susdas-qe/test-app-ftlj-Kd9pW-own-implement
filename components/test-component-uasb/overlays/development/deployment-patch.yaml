@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-uasb
+  namespace: build-e2e-tywr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas/test-images@sha256:d1bbefcbf97cdffa43d82687056f5eea4c192cee5af5fd5c28508cdb3d07ab8c
+        name: container-image
+        resources: {}
+status: {}
